@@ -1,0 +1,34 @@
+###Create
+POST http://localhost:3000/create
+Content-Type: application/json
+
+{
+    "title": "Juan Pérez",
+    "description": "Paciente con síntomas leves",
+    "age": 30,
+    "genre": "Masculino",
+    "diagnosis": ["Gripe leve"],
+    "registrationDate": "2025-11-03T09:00:00.000Z"
+}
+
+###Get all
+GET http://localhost:3000
+
+###Get by ID
+GET http://localhost:3000/6908e830be5160e91bd80ee4
+
+###Update
+PUT http://localhost:3000/6908e830be5160e91bd80ee4
+Content-Type: application/json
+
+{
+    "title": "Juan Pérez Actualizado",
+    "description": "Paciente con síntomas mejorados",
+    "age": 31,
+    "genre": "Masculino",
+    "diagnosis": ["Gripe leve", "Recuperado"],
+    "registrationDate": "2025-11-04T09:00:00.000Z"
+}
+
+###Delete
+DELETE http://localhost:3000/6908e830be5160e91bd80ee4
