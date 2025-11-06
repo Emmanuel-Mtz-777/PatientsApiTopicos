@@ -1,24 +1,39 @@
 ###Create
 POST http://localhost:3000/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NzhkZTZhLTI0YTctNDE4OC1hMTQ3LWRiYmRiMTc0YTczMSIsImlhdCI6MTc2MjM3ODMwNiwiZXhwIjoxNzYyMzgxOTA2fQ.MBMdv3wJLtUsBgAtp8eptRfPsWXK-M8HF-2f0iJzPtU
+
 Content-Type: application/json
 
 {
-    "title": "Juan Pérez",
+    "title": "Juan Pérez 2",
     "description": "Paciente con síntomas leves",
     "age": 30,
     "genre": "Masculino",
     "diagnosis": ["Gripe leve"],
     "registrationDate": "2025-11-03T09:00:00.000Z"
 }
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "juan.perez@example.com",
+    "password": "password123"
+}
+
 
 ###Get all
 GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NzhkZTZhLTI0YTctNDE4OC1hMTQ3LWRiYmRiMTc0YTczMSIsImlhdCI6MTc2MjM3ODMwNiwiZXhwIjoxNzYyMzgxOTA2fQ.MBMdv3wJLtUsBgAtp8eptRfPsWXK-M8HF-2f0iJzPtU
 
 ###Get by ID
 GET http://localhost:3000/690a1d4ca4db3e64f9117287
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NzhkZTZhLTI0YTctNDE4OC1hMTQ3LWRiYmRiMTc0YTczMSIsImlhdCI6MTc2MjM3ODMwNiwiZXhwIjoxNzYyMzgxOTA2fQ.MBMdv3wJLtUsBgAtp8eptRfPsWXK-M8HF-2f0iJzPtU
 
 ###Update
 PUT http://localhost:3000/690a1d4ca4db3e64f9117287
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NzhkZTZhLTI0YTctNDE4OC1hMTQ3LWRiYmRiMTc0YTczMSIsImlhdCI6MTc2MjM3ODMwNiwiZXhwIjoxNzYyMzgxOTA2fQ.MBMdv3wJLtUsBgAtp8eptRfPsWXK-M8HF-2f0iJzPtU
+
 Content-Type: application/json
 
 {
@@ -32,3 +47,4 @@ Content-Type: application/json
 
 ###Delete
 DELETE http://localhost:3000/690a1d4ca4db3e64f9117287
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NzhkZTZhLTI0YTctNDE4OC1hMTQ3LWRiYmRiMTc0YTczMSIsImlhdCI6MTc2MjM3ODMwNiwiZXhwIjoxNzYyMzgxOTA2fQ.MBMdv3wJLtUsBgAtp8eptRfPsWXK-M8HF-2f0iJzPtU

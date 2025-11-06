@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
-import { DP_USER, DB_PASSWORD } from '../Config.js';
+import { DB_USER, DB_PASSWORD } from '../Config.js';
 
-const uri=`mongodb+srv://${DP_USER}:${DB_PASSWORD}@patients.wwqdgmg.mongodb.net/?appName=Patients`
+const uri=`mongodb+srv://${DB_USER}:${DB_PASSWORD}@patients.wwqdgmg.mongodb.net/?appName=Patients`
 
 mongoose.connect(uri)
 
